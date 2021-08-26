@@ -17,17 +17,16 @@
     </div>
     <script>
       (function () {
-        const ilbuniGroup = document.querySelectorAll('.ilbuni');
+        // 이벤트 위임
+        const stage = document.querySelector('.stage');
 
         function clickHandler(e) {
-          const ilbuni = e.currentTarget;
-          const stage = ilbuni.parentNode;
-          stage.removeChild(ilbuni);
+          if (e.target.classList.contains('ilbuni')) {
+            stage.removeChild(e.target);
+          }
         }
 
-        ilbuniGroup.forEach(function (ilbuni) {
-          ilbuni.addEventListener('click', clickHandler);
-        });
+        stage.addEventListener('click', clickHandler);
       })();
     </script>
   </body>
