@@ -102,12 +102,19 @@
     <script>
       (function () {
         const stageElem = document.querySelector('.stage');
+        // 현재 활성화된 아이템을 저장
+        let currentItem;
 
         function doorHandler(e) {
-          let targetElem = e.target;
+          const targetElem = e.target;
+
+          if (currentItem) {
+            currentItem.classList.remove('door-opened');
+          }
 
           if (targetElem.classList.contains('door-body')) {
             targetElem.parentNode.classList.toggle('door-opened');
+            currentItem = targetElem.parentNode;
           }
         }
 
