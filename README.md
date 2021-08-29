@@ -30,3 +30,6 @@
 ## 8장 스크롤 다루기
 - [x] 스크롤 이벤트 다루기
 - [x] 스크롤 위치에 따라 오브젝트 조작하기
+
+## 9장 Transition/Animation 이벤트
+- [x] Transition 이벤트
