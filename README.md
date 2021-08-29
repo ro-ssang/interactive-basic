@@ -33,3 +33,7 @@
 
 ## 9장 Transition/Animation 이벤트
 - [x] Transition 이벤트
+- [x] Animation 이벤트
+
+## 10장 타이밍 제어하기
+- [x] setTimeout
