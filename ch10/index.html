@@ -22,10 +22,10 @@
       console.log('sample!');
     }
 
-    timerId = setTimeout(sample, 3000);
+    timerId = setInterval(sample, 1000 / 60);
 
-    btnElem.addEventListener('click', () => {
-      clearTimeout(timerId);
+    btnElem.addEventListener('click', function () {
+      clearInterval(timerId);
     });
   </script>
 </html>
