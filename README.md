@@ -38,3 +38,4 @@
 ## 10장 타이밍 제어하기
 - [x] setTimeout
 - [x] setInterval
+- [x] requestAnimationFrame
