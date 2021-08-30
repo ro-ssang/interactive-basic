@@ -20,12 +20,13 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
-  transform-style: preseve-3d;
+  transform-style: preserve-3d;
 }
 .house {
   width: 100vw;
   height: 100vh;
-  transform-style: preseve-3d;
+  transform: translateZ(-490vw);
+  transform-style: preserve-3d;
 }
 .wall {
   position: absolute;
@@ -34,6 +35,14 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.8);
+}
+.wall-left {
+  width: 1000vw;
+  transform: rotateY(90deg) translateZ(-500vw);
+}
+.wall-right {
+  width: 1000vw;
+  transform: rotateY(90deg) translateZ(-400vw);
 }
 .wall-content {
   display: flex;
